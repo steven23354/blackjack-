@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting System</title>
+     <link rel="stylesheet" href="index.css">
+</head>
+<body class="bodys">
+    <header >
+        <h2>Vote Your Favorite Option</h2>
+        
+    </header>
+    <div class=" vote-container">
+        <div class="option">
+            <h3>option A</h3>
+            <p>votes:<span id="voteA">  0  </span></p>
+            <button onclick="vote('A')">vote A</button>
+        </div>
+        
+        <div class="option">
+            <h3>option B</h3>
+            <p>votes:<span id="voteB">  0  </span></p>
+            <button onclick="vote('B')">vote B</button>
+        </div>
+
+        <div class="option">
+            <h3>option C</h3>
+            <p>votes:<span id="voteC">  0  </span></p>
+            <button onclick="vote('C')">vote C</button>
+        </div>
+
+
+
+
+
+
+
+
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav>
+<ul>
+    <a href="index.html">Click Here</a>
+
+
+
+
+
+
+    <script>
+        
+//Initialize vote count
+let voteA = 0;
+let voteB = 0;
+let voteC = 0;
+
+ function vote(option) {
+   if (option === 'A')
+    {voteA ++;
+    document.getElementById("voteA").innerText = voteA;
+    } else if (option === 'B') {
+      voteB ++;
+      document.getElementById("voteB").innertext = voteB; 
+   
+    }
+alert("Thank You For Voting !!")
+ };
+    </script>
+
+</body>
+
+</html>
